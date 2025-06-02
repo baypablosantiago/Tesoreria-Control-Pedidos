@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 
 @Component({
   selector: 'app-da-card',
-  imports: [],
-  templateUrl: './da-card.component.html',
-  styleUrl: './da-card.component.scss'
+  templateUrl: 'da-card.component.html',
+  imports: [MatCardModule, MatButtonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DaCardComponent {
-
-}
+export class DaCardComponent {}
