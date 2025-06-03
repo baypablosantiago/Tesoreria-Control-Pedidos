@@ -49,7 +49,21 @@ export class DashboardComponent {
       fundingSource: 'Tesoro Nacional',
       checkingAccount: 'CC305-999999/00',
       comments: ''
+    },
+    {
+      id: 4,
+      da: 305,
+      requestNumber: 99999999999,
+      fiscalYear: 2025,
+      paymentOrderNumber: 8888,
+      concept: 'El diablo',
+      dueDate: '2025-06-10',
+      amount: 290000.00,
+      fundingSource: 'Tesoro Nacional',
+      checkingAccount: 'CC305-999999/00',
+      comments: 'Hostiaaaaaaaaaaaaaaa'
     }
+    
   ];
 
   // Agrupado por DA
