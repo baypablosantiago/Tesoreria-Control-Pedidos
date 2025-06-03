@@ -1,1 +1,6 @@
-<p>dashboard works!</p>
+<div *ngFor="let group of groupedRequests">
+  <app-da-card
+    [daTitle]="'D.A. ' + group.da"
+    [requests]="group.requests"
+  ></app-da-card>
+</div>

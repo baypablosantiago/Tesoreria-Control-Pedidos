@@ -1,1 +1,27 @@
-<p>request-row works!</p>
+<mat-card class="request-card" appearance="outlined">
+  <div class="request-header">
+    <strong>#{{ request.requestNumber }}</strong>
+    <span>OP {{ request.paymentOrderNumber }} - {{ request.fiscalYear }}</span>
+  </div>
+
+  <div class="request-body">
+    <div><strong>Concepto:</strong> {{ request.concept }}</div>
+    <div><strong>Vencimiento:</strong> {{ request.dueDate }}</div>
+    <div><strong>Importe:</strong> {{ request.amount }}</div>
+    <div><strong>Fuente:</strong> {{ request.fundingSource }}</div>
+    <div><strong>Cuenta:</strong> {{ request.checkingAccount }}</div>
+    <div *ngIf="request.comments"><strong>Comentarios:</strong> {{ request.comments }}</div>
+  </div>
+
+  <div class="request-actions">
+    <button mat-icon-button color="primary" aria-label="Ver">
+      <mat-icon>visibility</mat-icon>
+    </button>
+    <button mat-icon-button color="accent" aria-label="Aprobar">
+      <mat-icon>check_circle</mat-icon>
+    </button>
+    <button mat-icon-button color="warn" aria-label="Rechazar">
+      <mat-icon>cancel</mat-icon>
+    </button>
+  </div>
+</mat-card>

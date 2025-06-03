@@ -1,14 +1,12 @@
 <mat-card appearance="outlined">
   <mat-card-header>
-    <!-- <mat-card-title> DA </mat-card-title> -->
-    <mat-card-subtitle>D.A. 122: Ministerio de Salud</mat-card-subtitle>
+    <mat-card-subtitle>{{ daTitle }}</mat-card-subtitle>
   </mat-card-header>
+
   <mat-card-content>
-    <p> placeholder for request-row component </p>
+    <app-request-row
+      *ngFor="let request of requests"
+      [request]="request"
+    ></app-request-row>
   </mat-card-content>
-  <!-- 
-  <mat-card-actions>
-    <button matButton>Learn More</button>
-  </mat-card-actions>
-  -->
 </mat-card>

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DaCardComponent } from "./components/da-card/da-card.component";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DaCardComponent],
+  imports: [RouterOutlet, DashboardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
