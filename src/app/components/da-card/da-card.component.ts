@@ -21,6 +21,7 @@ import { MatTableModule } from '@angular/material/table';
 export class DaCardComponent {
 
 @Input() requests: FundingRequest[] = [];
+
 @Input() daTitle: string = '';
 displayedColumns = [
     'N° de Solicitud',
