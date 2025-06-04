@@ -63,12 +63,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+          "port": 4300
+          },
           "configurations": {
             "production": {
               "buildTarget": "Control-Pedidos:build:production"
             },
             "development": {
-              "buildTarget": "Control-Pedidos:build:development"
+              "buildTarget": "Control-Pedidos:build:development",
+              "port": 4300
             }
           },
           "defaultConfiguration": "development"
